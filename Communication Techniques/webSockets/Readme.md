@@ -23,7 +23,8 @@
     - Sticky sessions
     - Load Balancer
     - Authentication
-    - Firewall
+    - Firewall/ proxy
+    - connection drops
     - scaling
     -  Testing / debugging for real time connections
     - Backward compatibility

@@ -1,25 +1,25 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
-let data = 'Initial Data';
+let data = "Initial Data";
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
 });
 
-app.get('/getData', (req, res) => {
+app.get("/getData", (req, res) => {
   res.send({
-    data
+    data,
   });
 });
 
 // Use post/put to update
-app.get('/updateData', (req, res) => {
-  data = 'Updated Data';
+app.get("/updateData", (req, res) => {
+  data = "Updated Data";
   res.send({
-    data
-  })
-})
+    data,
+  });
+});
 
 const port = process.env.PORT || 5011;
 app.listen(port, () => {
