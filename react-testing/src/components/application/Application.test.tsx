@@ -32,5 +32,14 @@ describe("application", () => {
 
     const submitButtonElement = screen.getByRole("button");
     expect(submitButtonElement).toBeInTheDocument();
+
+    const paragraphElement = screen.getByText('All fields are mandatory')
+    expect(paragraphElement).toBeInTheDocument();
+
+    const nameElement4 = screen.getByDisplayValue('Divyanshu')
+    expect(nameElement4).toBeInTheDocument()
+
+    const customElement = screen.getByTestId('custom-element')
+    expect(customElement).toBeInTheDocument()
   });
 });
