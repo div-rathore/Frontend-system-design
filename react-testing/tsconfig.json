@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "types": ["node", "jest"],
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "ES2021"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -21,6 +23,6 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+        "src/**/*",
   ]
 }
